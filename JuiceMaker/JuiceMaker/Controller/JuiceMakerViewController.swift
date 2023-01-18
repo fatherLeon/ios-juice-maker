@@ -128,8 +128,8 @@ final class JuiceMakerViewController: UIViewController {
     }
 }
 
-extension JuiceMakerViewController: UpdatableFruitStock {
-    func updateStockDelegate(changeStock: [Fruit: Int]) {
+extension JuiceMakerViewController: UpdatableFruitStockDelegate {
+    func updateStock(changeStock: [Fruit: Int]) {
         fruitStore.setFruits(changeStock)
         setLabel()
     }
