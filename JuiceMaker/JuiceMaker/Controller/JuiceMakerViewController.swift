@@ -8,22 +8,6 @@ final class JuiceMakerViewController: UIViewController {
     private var juiceMaker: JuiceMaker
     private var fruitStore: FruitStore
     
-    private var strawberryAmount: Int {
-        return fruitStore.fruits[.strawberry] ?? 0
-    }
-    private var bananaAmount: Int {
-        return fruitStore.fruits[.banana] ?? 0
-    }
-    private var pineappleAmount: Int {
-        return fruitStore.fruits[.pineapple] ?? 0
-    }
-    private var kiwiAmount: Int {
-        return fruitStore.fruits[.kiwi] ?? 0
-    }
-    private var mangoAmount: Int {
-        return fruitStore.fruits[.mango] ?? 0
-    }
-    
     @IBOutlet weak private var strawberryLabel: UILabel!
     @IBOutlet weak private var bananaLabel: UILabel!
     @IBOutlet weak private var kiwiLabel: UILabel!
@@ -56,11 +40,11 @@ final class JuiceMakerViewController: UIViewController {
     }
     
     private func setLabel() {
-        strawberryLabel.text = "\(strawberryAmount)"
-        bananaLabel.text = "\(bananaAmount)"
-        kiwiLabel.text = "\(kiwiAmount)"
-        pineappleLabel.text = "\(pineappleAmount)"
-        mangoLabel.text = "\(mangoAmount)"
+        strawberryLabel.text = "\(fruitStore.strawberryAmount)"
+        bananaLabel.text = "\(fruitStore.bananaAmount)"
+        kiwiLabel.text = "\(fruitStore.kiwiAmount)"
+        pineappleLabel.text = "\(fruitStore.pineappleAmount)"
+        mangoLabel.text = "\(fruitStore.mangoAmount)"
     }
     
     private func showSuccessAlert(message: String) {
@@ -114,15 +98,15 @@ final class JuiceMakerViewController: UIViewController {
         for (fruit, _) in recipe {
             switch fruit {
             case .strawberry:
-                strawberryLabel.text = "\(strawberryAmount)"
+                strawberryLabel.text = "\(fruitStore.strawberryAmount)"
             case .banana:
-                bananaLabel.text = "\(bananaAmount)"
+                bananaLabel.text = "\(fruitStore.bananaAmount)"
             case .pineapple:
-                pineappleLabel.text = "\(pineappleAmount)"
+                pineappleLabel.text = "\(fruitStore.pineappleAmount)"
             case .kiwi:
-                kiwiLabel.text = "\(kiwiAmount)"
+                kiwiLabel.text = "\(fruitStore.kiwiAmount)"
             case .mango:
-                mangoLabel.text = "\(mangoAmount)"
+                mangoLabel.text = "\(fruitStore.mangoAmount)"
             }
         }
     }

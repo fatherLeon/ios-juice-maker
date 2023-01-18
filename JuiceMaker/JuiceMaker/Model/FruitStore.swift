@@ -3,6 +3,22 @@
 
 class FruitStore {
     private(set) var fruits: [Fruit: Int] = [:]
+    
+    var strawberryAmount: Int {
+        return fruits[.strawberry] ?? 0
+    }
+    var bananaAmount: Int {
+        return fruits[.banana] ?? 0
+    }
+    var pineappleAmount: Int {
+        return fruits[.pineapple] ?? 0
+    }
+    var kiwiAmount: Int {
+        return fruits[.kiwi] ?? 0
+    }
+    var mangoAmount: Int {
+        return fruits[.mango] ?? 0
+    }
 
     init(amount: Int = 0) {
         self.fruits[.strawberry] = amount
