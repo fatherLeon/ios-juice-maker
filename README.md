@@ -25,7 +25,7 @@
 |<img src="https://cdn.discordapp.com/attachments/535779947118329866/1055718870951940146/1671110054020-0.jpg" width="150" height="180">|<img height="180px" src="https://raw.githubusercontent.com/Rhode-park/ios-rock-paper-scissors/step02/image/leonFather.jpeg">|
 
 ## 📁 프로젝트 구조
-<details>
+<details open>
     <summary><big>UML</big></summary>
 
 * Class Diagram
