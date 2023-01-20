@@ -129,8 +129,7 @@
 ## 🔫 트러블 슈팅
 
 <details open>
-    <summary><span style="font-size: 1.5em;">📍 STEP 1
-</span></summary>
+    <summary><strong><big>📍 STEP 1</big></strong></summary>
 
 ### 1️⃣ 재료가 두개 들어간 쥬스 제조시 두번째 재료가 부족한 경우 첫번째 재료가 소진되는 문제
 #### 문제점
@@ -250,8 +249,7 @@ func checkFruitInStore(_ juice: Juice) -> Bool {
 </details>
 
 <details open>
-    <summary><span style="font-size: 1.5em;">📍 STEP 2
-</span></summary>
+    <summary><strong><big>📍 STEP 2</big></strong></summary>
     
 ### 1️⃣ 화면전환 방법 고민
 #### 문제점
@@ -332,8 +330,7 @@ private func decideOrderJuice(_ juice: String) -> Juice? {
 </details>
 
 <details open>
-    <summary><span style="font-size: 1.5em;">📍 STEP 3
-</span></summary>
+    <summary><strong><big>📍 STEP 3</big></strong></summary>
     
 ### 1️⃣ 화면 간 데이터 이동
 #### 문제점
