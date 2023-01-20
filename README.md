@@ -1,51 +1,56 @@
 # 🧃 JuiceMaker
 
-## 목차
-* [소개](#소개)
-* [팀원](#팀원)
-* [프로젝트 구조](#프로젝트-구조)
-* [타임라인](#타임라인)
-* [트러블 슈팅](#트러블-슈팅)
-* [참고 링크](#참고-링크)
-* [팀 규칙](#팀-규칙)
-* [2팀 회고](#2팀-회고)
+## 📚 목차
+* [🧃 소개](#-소개)
+* [👤 팀원](#-팀원)
+* [📁 프로젝트 구조](#-프로젝트-구조)
+* [🖥 실행화면](#-실행화면)
+* [⏱ 타임라인](#-타임라인)
+* [🔫 트러블 슈팅](#-트러블-슈팅)
+* [👥 팀 규칙](#-팀-규칙)
+* [🔖2팀 회고](#-2팀-회고)
+* [🔍 참고 링크](#-참고-링크)
 
-## 소개
+## 🧃 소개
 ### 프로젝트 기간: 23.01.02 ~ 23.01.20
 * 각 주스의 현재 재고량을 보여준다.
 * 주스 만들기 버튼을 누르면 해당 주스의 재고가 충분히 있다면 완료를 띄워주며 재료를 감소시킨다.
 * 만약 주스의 재고가 부족하다면 alert를 띄워주고 '네'를 누를시 재고를 수정하러 이동하거나 '아니오'를 alert창을 닫는다
 * 재고수정 버튼을 눌러 재고 수정 화면으로 가서 '+','-'버튼을 눌러 재고량을 수정한다.
 
-## 팀원
+## 👤 팀원
 
 |⭐️Vetto|⭐️레옹아범|
 | :--------: | :--------: |
 |<img src="https://cdn.discordapp.com/attachments/535779947118329866/1055718870951940146/1671110054020-0.jpg" width="150" height="180">|<img height="180px" src="https://raw.githubusercontent.com/Rhode-park/ios-rock-paper-scissors/step02/image/leonFather.jpeg">|
 
-## 프로젝트 구조
+## 📁 프로젝트 구조
 <details>
     <summary><big>UML</big></summary>
-    1.19.(목) 활동학습 이후 작성 예정
+
+* Class Diagram
+![Class Diagram](https://user-images.githubusercontent.com/55453151/213627442-59e51a82-1cc2-46d0-9f6c-7fc027438c9e.png)
+
 </details>
 
-## 실행화면
+## 🖥 실행화면
 
 #### [**IPhone 14 pro max**]
 * 쥬스 제조 성공 및 ```재고수정```버튼 클릭시 화면 이동
-![14프로맥스](https://user-images.githubusercontent.com/55453151/212246427-8f4e30d0-75b9-479c-992b-fea1d210f1ba.gif)
+
+<center><img src="https://user-images.githubusercontent.com/55453151/212246427-8f4e30d0-75b9-479c-992b-fea1d210f1ba.gif" width="600" height="300"></center>
 
 #### [**IPhone 12 pro**] 
 * 재료가 모자를 경우 Alert창과 예를 누를시 발생하는 화면이동 Action
-![12프로](https://user-images.githubusercontent.com/55453151/212246442-83e06bc6-bf82-4c4b-b658-66a1852b8d06.gif)
+<center><img src="https://user-images.githubusercontent.com/55453151/212246442-83e06bc6-bf82-4c4b-b658-66a1852b8d06.gif" width="600" height="300"></center>
 
 #### [**IPhone SE 3rd generation**] 
 * 재고 수정이 이전화면에 반영되는 내용
-![SE3세대](https://user-images.githubusercontent.com/55453151/212246450-017ecc6e-158c-4f09-a944-63d66bd4758d.gif)
+<center><img src="https://user-images.githubusercontent.com/55453151/212246450-017ecc6e-158c-4f09-a944-63d66bd4758d.gif" width="600" height="300"></center>
 
 > 오토레이아웃을 보여주기 위해 다양한 기종의 실행화면을 넣었습니다.
 
-### 프로젝트 수행 중 핵심 경험
+### 📌 프로젝트 수행 중 핵심 경험
  
 <details>
     <summary>STEP 1</summary>
@@ -82,7 +87,7 @@
 </details>
 
 
-## 타임라인
+## ⏱ 타임라인
 
 <details>
     <summary>STEP 1 [2023.01.02] ~ [2023.01.05]</summary>    
@@ -116,15 +121,17 @@
 |23.1.11.(수)|feat: 함수 메소드 프로퍼티 생성 및 구현, stepper 구현, NavigationBar 수정, touchUpDismissButton 구현, 네비게이션 바 뒤로가기 버튼 삭제, style: 함수 위치 수정, fix: stepper동작 이상 버그 수정|
 |23.1.12.(목)|feat: autolayout 설정, 메소드 생성 및 static변수 생성, refactor: STEP2 리뷰 수정, ecideOrderJuice함수 리팩토링, FruitStockViewController내의 IBAction함수명 변경, chore: 분리돼있는 조건문 수정|
 |23.1.13.(금)|feat: 데이터전달(delegate) 구현, refactor: singleton에서 delegate로 데이터 공유 방식 변경에 따른 리팩토링, 데이터 전달 객체를 Dictionary컬렉션에서 FruitStore 타입으로 리팩토링|
+|23.1.16.(월)|refactor: 프로토콜 및 FruitStore 수정, 접근 제어자 변경 및 변경에 따른 리팩토링, delegate메서드 재구현, Label 업데이트 방법 수정, FruitStockViewController 리팩토링, 메서드 로직 수정, 메서드명 수정, 접근 제어자 설정 및 메서드명 변경|
+|23.1.17.(화)|refactor: required init 사용 리팩토링, 연산 프로퍼티 수정, fix: JuiceMakerViewController 프로퍼티 변경에 따른 에러 수정|
     
 </details>
 
-## 트러블 슈팅
+## 🔫 트러블 슈팅
 
 <details open>
-    <summary><big>Step1</big></summary>
+    <summary><big>📍 Step1</big></summary>
 
-### 재료가 두개 들어간 쥬스 제조시 두번째 재료가 부족한 경우 첫번째 재료가 소진되는 문제
+### 1️⃣ 재료가 두개 들어간 쥬스 제조시 두번째 재료가 부족한 경우 첫번째 재료가 소진되는 문제
 #### 문제점
 ```swift
 func makeJuice(juice: JuiceMenu) {
@@ -163,7 +170,7 @@ private func checkFruitInStore(_ juice: Juice) -> Bool {
 ```
 * checkFruitInStore라는 메소드를 생성하여 여러개의 재료를 받을 경우 두개의 재료가 전부 다 있을 경우 true / 두개 중 하나의 재료라도 없을 시 false를 반환하게 만들어 makeJuice메소드에서 true값일 경우 쥬스를 생성할 수 있게 만들었습니다.
 
-### enum Error
+### 2️⃣ enum Error
 #### 문제점
 * 에러가 발생했을 때 do-try-catch문으로 에러처리를 하고 그 catch문 안에서 print문을 사용하였는데 그렇게 하면 새로운 에러가 추가 될 때 출력문을 찾아가야 한다는 단점이 생겼습니다.
 ```swift
@@ -216,7 +223,7 @@ do {
 }
 ```
 
-### Naming    
+### 3️⃣ Naming    
 #### 문제점
 * 클래스 메서드라 생각하여 동사로만 이루어진 짧은 이름의 함수명을 지었습니다. 그러나 다른 코드에서는 동사 + 명사인 함수명이 있었고 통일성이 맞지 않아 코드의 가독성이 좋지 않았습니다.
 
@@ -242,9 +249,9 @@ func checkFruitInStore(_ juice: Juice) -> Bool {
 </details>
 
 <details open>
-    <summary><big>Step2</big></summary>
+    <summary><big>📍 Step2</big></summary>
     
-### 화면전환 방법 고민
+### 1️⃣ 화면전환 방법 고민
 #### 문제점
 * 화면전환 방법은 크게 Modality와 Navigation으로 구현됩니다.
 * Navigation은 정보의 깊이에 따라서 구체적인 정보로 갈 때 사용하는게 좋고, Modality는 회원가입과 같이 구체적인 정보로 가지는 않지만 사용자에게 몰입감을 줘야할 때 사용하는게 좋다고 생각합니다.
@@ -255,7 +262,7 @@ func checkFruitInStore(_ juice: Juice) -> Bool {
 * FruitStockViewController는 현재 남은 재고를 확인은 물론, 수정까지 할 수 있습니다.
 * 그렇기 떄문에 JuiceMakerViewController의 구체적인 재고 정보를 FruitStockViewController가 보여준다고 생각하기 때문에 Navigation방법으로 FruitStockViewController로 화면전환 방법을 구현하였습니다.
     
-### 긴 Switch문의 코드 리팩토링
+### 2️⃣ 긴 Switch문의 코드 리팩토링
 #### 문제점
 ```swift
 func decideOrderJuice(_ juice: String) -> Juice? {
@@ -323,9 +330,9 @@ private func decideOrderJuice(_ juice: String) -> Juice? {
 </details>
 
 <details open>
-    <summary><big>Step3</big></summary>
+    <summary><big>📍 Step3</big></summary>
     
-### 화면 간 데이터 이동
+### 1️⃣ 화면 간 데이터 이동
 #### 문제점
 * 기존 싱글톤을 통해서 하나의 인스턴스로 각 화면간의 데이터를 공유하는 형태로 진행을 했습니다.
 * 싱글톤의 단점 중 하나인 의존성이 높아진다로 인해 싱글톤 방식의 구현이 아닌 Delegate방식으로 구현하였습니다.
@@ -352,7 +359,7 @@ private func pushFruitStockViewController() {
 * pushViewController을 할 때 다음 뷰 컨트롤러의 인스턴스를 생성하는데 여기서 setFruits메소드를 실행시켜서 데이터를 전달 할 수 있게 만들었습니다.
 
 
-### Stepper 작동 오류
+### 2️⃣ Stepper 작동 오류
 #### 문제점
 * 처음에 코드를 짤 때 저장되어있는 과일량보다 stepper의 value가 높아지면 저장되어있는 fruit의 개수를 늘려주고 아니면 fruit의 개수를 내려주는 식으로 코드를 구현했다. 하지만 이렇게 코드를 작성 할 경우 stepper의 밸류와 fruit의 개수가 0으로 동일할때 fruit의 개수가 마이너스 값으로 바뀌는 오류가 있었다.
     
@@ -375,20 +382,85 @@ if Int(sender.value) > currentStock {
     fruitStore.decreaseFruit(fruit)
 }
 ```
-                                              
+
+----  
+#### 최종 해결법
+
+* 기존에는 현재 과일재고인 fruitStore의 재고 값을 받아와 비교하고 Label과 stepper의 value값을 맞추는 방식이었다면 리팩토링한 결과 stepper의 value를 과일 재고와 맞춰주고 stepper의 value의 값이 변화하면 바로바로 stepper의 value값을 Label과 재고에 넣어주는 방식으로 수정하였습니다. 
+                   
+```swift
+@IBAction private func didTapFruitStepper(_ sender: UIStepper) {
+    guard let (fruit, label) = decideStepper(sender) else { return }
+        
+    fruits[fruit] = Int(sender.value)
+        
+    updateLabel(label: label, stepper: sender)
+}
+                                          
+private func updateLabel(label: UILabel, stepper: UIStepper) {
+    label.text = "\(Int(stepper.value))"
+}                                          
+```                                          
+                                          
+### 3️⃣ 재고 수정 시 과일별로 작동
+#### 문제점
+* 기존 재고수정 뷰 컨트롤러에서 stepper을 클릭시 한개의 과일재고가 바뀜에도 불구하고 모든 과일의 라벨을 다시 세팅해주는 로직을 사용했었습니다. 지금은 과일이 5개라 큰 상관은 없지만 과일이 수십~수백개 늘어날 경우 비효율적인 로직이라 생각합니다.
+
+#### 해결법
+```swift
+private func decideStepper(_ sender: UIStepper) -> (Fruit, UILabel)? {
+    switch sender {
+    case strawberryStepper:
+        return (.strawberry, strawberryLabel)
+    case bananaStepper:
+        return (.banana, bananaLabel)
+    case pineappleStepper:
+        return (.pineapple, pineappleLabel)
+    case kiwiStepper:
+        return (.kiwi, kiwiLabel)
+    case mangoStepper:
+        return (.mango, mangoLabel)
+    default:
+        return nil
+    }
+}
+```                                          
+* Stepper를 클릭시 해당 스테퍼에 따라 현재 과일 타입과 해당 과일의 라벨을 튜플 형식으로 반환했습니다.
+    
+```swift             
+private func updateLabel(label: UILabel, stepper: UIStepper) {
+    label.text = "\(Int(stepper.value))"
+}
+```
+* 해당 튜플의 값을 해당 updateLabel에 넣음으로 하나의 과일 라벨만 바뀌도록 설정했습니다.
+
+### 4️⃣ 뷰 컨트롤러간의 어떤 데이터 타입을 전달 할 것인가?    
+#### 문제점
+* 기존 FruitStore타입을 JuiceMakerViewController에서 FruitStockViewController로 넘겨줬습니다. 클래스를 넘겨줬으나, 참조타입이므로 큰 차이는 아닐지라도 결국 값 타입에 비해 변경 속도나 실행 속도가 느릴것이라 생각하였습니다.
+    
+#### 해결법
+#### FruitStockViewController
+```swift
+private var fruits: [Fruit: Int] = [:]
+
+func setFruits(_ fruits: [Fruit: Int]) {
+    self.fruits = fruits
+}
+```
+* 기존 FruitStore 클래스 인스턴스를 넘기는게 아닌 딕셔너리 값을 넘기는 방법을 채택했습니다.
+#### JuiceMakerViewController
+```swift
+func updateStock(changeStock: [Fruit: Int]) {
+    fruitStore.setFruits(changeStock)
+    setLabel()
+}
+```
+* UpdatableFruitStockDelegate의 필수 구현 메소드 역시 딕셔너리를 인자로 받아 현재 JuiceMaker의 FruitStore를 다시 변경하고 Label을 변경하는 작업으로 구현하였습니다.
+    
 </details>
 
-## 참고 링크
-[Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/)  
-[Swift Language Guide - Initialization](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html)  
-[Swift Language Guide - Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html)  
-[Swift Language Guide - Access Control](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html)  
-[Swift Language Guide - Nested Types](https://docs.swift.org/swift-book/LanguageGuide/TypeCasting.html)  
-[Swift Language Guide - Type Casting](https://docs.swift.org/swift-book/LanguageGuide/TypeCasting.html)  
-[delegate - Apple Developer Documentation](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate)
-[managing-a-shared-resource-using-a-singleton](https://developer.apple.com/documentation/swift/managing-a-shared-resource-using-a-singleton)
-    
-## 팀 규칙
+   
+## 👥 팀 규칙
 #### 코드 컨벤션
 * 짝 프로그래밍
 * commit단위는 기능
@@ -418,5 +490,15 @@ fix: 열거형 추가
 fix
 ```
 
-## 2팀 회고
-* 1.20.(금) 작성예정
+## 🔖 2팀 회고
+[2팀 회고](https://github.com/fatherLeon/ios-juice-maker/blob/step3/🔖%20팀%20회고.md)
+
+## 🔍 참고 링크
+[Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/)  
+[Swift Language Guide - Initialization](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html)  
+[Swift Language Guide - Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html)  
+[Swift Language Guide - Access Control](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html)  
+[Swift Language Guide - Nested Types](https://docs.swift.org/swift-book/LanguageGuide/TypeCasting.html)  
+[Swift Language Guide - Type Casting](https://docs.swift.org/swift-book/LanguageGuide/TypeCasting.html)  
+[delegate - Apple Developer Documentation](https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate)
+[managing-a-shared-resource-using-a-singleton](https://developer.apple.com/documentation/swift/managing-a-shared-resource-using-a-singleton)
