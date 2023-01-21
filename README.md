@@ -491,7 +491,7 @@ fix
 ```
 
 ## 🔖 2팀 회고
-[2팀 회고](https://github.com/fatherLeon/ios-juice-maker/blob/step3/🔖%20팀%20회고.md)
+[2팀 회고](https://github.com/fatherLeon/ios-juice-maker/blob/step3/팀%20회고.md)
 
 ## 🔍 참고 링크
 [Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/)  
